@@ -9,8 +9,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 				<label>{{ label }}</label>
 				<input
 					type="date"
-					[min]="minDate"
-					[max]="maxDate"
+					[min]="minDate | date : 'yyyy-MM-dd'"
 					[ngModel]="date"
 					(ngModelChange)="onChangeDate($event)"
 				/>
@@ -45,13 +44,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ActivitySelectorComponent {
 	@Input() label: string = 'Next activity';
 	@Input() date: string = '';
-	@Input() minDate = new Date().toISOString();
-	@Input() maxDate: string = '';
+	@Input() minDate = new Date();
 	@Output() dateChange = new EventEmitter<string>();
 
 	constructor(private readonly router: Router) {}
 
-	onChangeDate($event: string) {
+	onChangeDate($event: any) {
 		this.dateChange.emit($event);
 		this.router.navigate(['activity'], { queryParams: { date: $event } });
 	}
