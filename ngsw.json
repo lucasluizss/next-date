@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1678064088695,
+  "index": "https://lucasluizss.github.io/next-date/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://lucasluizss.github.io/next-date/928.3c7e5c97fb82ae97.js",
+        "https://lucasluizss.github.io/next-date/favicon.ico",
+        "https://lucasluizss.github.io/next-date/index.html",
+        "https://lucasluizss.github.io/next-date/main.198ce5085e5e2f6d.js",
+        "https://lucasluizss.github.io/next-date/manifest.webmanifest",
+        "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js",
+        "https://lucasluizss.github.io/next-date/runtime.bdadfbc34bf47bb9.js",
+        "https://lucasluizss.github.io/next-date/styles.1e0a26946e27eb5b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-128x128.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-144x144.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-152x152.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-192x192.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-384x384.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-512x512.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-72x72.png",
+        "https://lucasluizss.github.io/next-date/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://lucasluizss.github.io/next-date/928.3c7e5c97fb82ae97.js": "e9f6ed223fc19ecc548cb7df26c0f1f55946ea5e",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://lucasluizss.github.io/next-date/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://lucasluizss.github.io/next-date/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://lucasluizss.github.io/next-date/index.html": "b91ca4ac8a644b401cfbe027085dba4ae7de5ef7",
+    "https://lucasluizss.github.io/next-date/main.198ce5085e5e2f6d.js": "9d9ac2e86a17f80222ac50f4bea550570f3b8e96",
+    "https://lucasluizss.github.io/next-date/manifest.webmanifest": "0a4d3480d6ade9c543b3aa31c92357f9d2555eaf",
+    "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js": "4feaaac37e7154b6a064d656a44c0067bd91d046",
+    "https://lucasluizss.github.io/next-date/runtime.bdadfbc34bf47bb9.js": "833a002fe691fc810027146ff18e27155a0d6597",
+    "https://lucasluizss.github.io/next-date/styles.1e0a26946e27eb5b.css": "067d098ec72957458e72c433a4c1880e492dade5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
