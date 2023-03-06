@@ -13,6 +13,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 					[ngModel]="date"
 					(ngModelChange)="onChangeDate($event)"
 				/>
+				<button (click)="onSubmit()" class="confirm-btn">Confirm</button>
 			</div>
 		</div>
 	`,
@@ -38,6 +39,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 			.box div {
 				padding: 20%;
 			}
+			.confirm-btn {
+				margin-top: 20px;
+				margin-right: 5px;
+				width: 155px;
+			}
 		`,
 	],
 })
@@ -50,7 +56,11 @@ export class ActivitySelectorComponent {
 	constructor(private readonly router: Router) {}
 
 	onChangeDate($event: any) {
+		this.date = $event;
 		this.dateChange.emit($event);
-		this.router.navigate(['activity'], { queryParams: { date: $event } });
+	}
+
+	onSubmit() {
+		this.router.navigate(['activity'], { queryParams: { date: this.date } });
 	}
 }

@@ -8,16 +8,6 @@ body {
 	padding: 0;
 }
 
-input[type='date'] {
-	display: flex;
-	display: -webkit-flex;
-	flex: 1 0 0;
-	-webkit-flex: 1 0 0;
-	-webkit-appearance: textfield;
-	-moz-appearance: textfield;
-	min-height: 1.2em;
-}
-
 h1 {
 	font-size: 80px;
 	margin-top: 40px;
