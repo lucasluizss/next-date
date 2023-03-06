@@ -1,6 +1,17 @@
 <div class="container">
-	<h1>Activity for the week</h1>
+	<h1>Next activity in</h1>
 	<div class="timer">{{ timer }}</div>
 	<div class="activity">{{ activity }}</div>
-	<button class="button" (click)="sortActivity()">Sort Next Activity</button>
+
+	<div class="actions" *ngIf="calendarEvent">
+		<div title="Add to Calendar" class="addeventatc button add-calendar-btn">
+			Add to Calendar
+			<span class="start">{{ calendarEvent.startDate }}</span>
+			<span class="end">{{ calendarEvent.endDate }}</span>
+			<span class="title">{{ calendarEvent.summary }}</span>
+			<span class="description">{{ calendarEvent.description }}</span>
+			<span class="location">{{ calendarEvent.location }}</span>
+		</div>
+		<button class="button" onclick="window.history.back()">Next Activity</button>
+	</div>
 </div>

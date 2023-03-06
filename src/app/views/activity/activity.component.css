@@ -11,48 +11,13 @@
 	margin-top: 15%;
 }
 
-.timer {
-	font-size: 60px;
-	margin-top: 40px;
-	margin-bottom: 0;
-	animation: colorAnimation 5s infinite;
-}
-
-.activity {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	text-align: center;
-	font-size: 60px;
-}
-
-button {
-	background: #fff;
-	color: #333;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	display: block;
-	margin: 0 auto;
-	animation: colorAnimation 5s infinite;
-	font-size: 24px;
+.button {
 	margin-bottom: 15%;
 }
 
-@keyframes colorAnimation {
-	0% {
-		color: #fff;
-	}
-	25% {
-		color: #f1c40f;
-	}
-	50% {
-		color: #e74c3c;
-	}
-	75% {
-		color: #9b59b6;
-	}
-	100% {
-		color: #fff;
-	}
+.actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }

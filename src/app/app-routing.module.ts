@@ -6,19 +6,31 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
 	{
 		path: '',
+		redirectTo: '/new',
+		pathMatch: 'full',
+	},
+	{
+		path: '',
 		component: AppComponent,
 		children: [
 			{
-				path: '',
+				path: 'activity',
 				loadChildren: () =>
 					import('./views/activity/activity.module').then(x => x.AppActivityModule),
+			},
+			{
+				path: 'new',
+				loadChildren: () =>
+					import('./views/activity-selector/activity-selector.module').then(
+						x => x.AppActivitySelectorModule
+					),
 			},
 		],
 	},
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
 	exports: [RouterModule],
 })
 export class AppRoutingModule {}
