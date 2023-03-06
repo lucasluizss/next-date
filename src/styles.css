@@ -1,0 +1,83 @@
+/* Add your CSS styles here */
+body {
+	background: linear-gradient(to bottom right, #3498db, #8e44ad);
+	background-size: cover;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 80px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	text-align: center;
+	animation: colorAnimation 5s infinite;
+}
+
+.timer {
+	font-size: 48px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.activity {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+
+button {
+	background: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	animation: colorAnimation 5s infinite;
+	font-size: 24px;
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	.timer {
+		font-size: 36px;
+		margin-top: 10px;
+	}
+
+	.activity {
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	button {
+		font-size: 16px;
+		padding: 8px 16px;
+	}
+}
+
+@keyframes colorAnimation {
+	0% {
+		color: #fff;
+	}
+	25% {
+		color: #f1c40f;
+	}
+	50% {
+		color: #e74c3c;
+	}
+	75% {
+		color: #9b59b6;
+	}
+	100% {
+		color: #fff;
+	}
+}
