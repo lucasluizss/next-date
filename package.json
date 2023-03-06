@@ -5,7 +5,8 @@
 		"ng": "ng",
 		"start": "ng serve",
 		"build": "ng build",
-		"watch": "ng build --watch --configuration development"
+		"watch": "ng build --watch --configuration development",
+		"deploy": "git checkout gh-pages && git pull origin main && ng deploy --base-href=https://lucasluizss.github.io/next-date/"
 	},
 	"private": true,
 	"dependencies": {
