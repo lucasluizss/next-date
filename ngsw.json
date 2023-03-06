@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1678131665096,
+  "timestamp": 1678133679795,
   "index": "https://lucasluizss.github.io/next-date/index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "https://lucasluizss.github.io/next-date/526.ea000e625df66b00.js",
-        "https://lucasluizss.github.io/next-date/612.f989efdee3fd10d7.js",
+        "https://lucasluizss.github.io/next-date/612.3047f1b8601365d1.js",
         "https://lucasluizss.github.io/next-date/favicon.ico",
         "https://lucasluizss.github.io/next-date/index.html",
-        "https://lucasluizss.github.io/next-date/main.959820023cc66e68.js",
+        "https://lucasluizss.github.io/next-date/main.b78f1b41dba77e62.js",
         "https://lucasluizss.github.io/next-date/manifest.webmanifest",
         "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js",
-        "https://lucasluizss.github.io/next-date/runtime.a13fa87ca7f947f9.js",
-        "https://lucasluizss.github.io/next-date/styles.4457643d4fa181a2.css"
+        "https://lucasluizss.github.io/next-date/runtime.0ea68285c4ebea7c.js",
+        "https://lucasluizss.github.io/next-date/styles.0c648831d9142150.css"
       ],
       "patterns": []
     },
@@ -47,7 +47,7 @@
   "dataGroups": [],
   "hashTable": {
     "https://lucasluizss.github.io/next-date/526.ea000e625df66b00.js": "5ffcee9bc14294b100def2a01024a07639007e24",
-    "https://lucasluizss.github.io/next-date/612.f989efdee3fd10d7.js": "bd0a0b75073bab5f83d7687782a7df98c73e5277",
+    "https://lucasluizss.github.io/next-date/612.3047f1b8601365d1.js": "82a3673b843790ce718062424779b2169e123f96",
     "https://lucasluizss.github.io/next-date/assets/icons/icon-128x128.png": "fd39c66c9100910c3d30c8f04289586e80baa92c",
     "https://lucasluizss.github.io/next-date/assets/icons/icon-144x144.png": "e6bdad733c7a4c5109b5ca58e8fd15394542f391",
     "https://lucasluizss.github.io/next-date/assets/icons/icon-152x152.png": "56e7540534ac49e64311f506de39c7e11b8ef188",
@@ -58,12 +58,12 @@
     "https://lucasluizss.github.io/next-date/assets/icons/icon-72x72.png": "632191d802194a33dbb508bbe71c95b451c5b0c5",
     "https://lucasluizss.github.io/next-date/assets/icons/icon-96x96.png": "7eabe15447e1dccd2c1e731e4e97dc13179e98f3",
     "https://lucasluizss.github.io/next-date/favicon.ico": "8430bed26a25e8e76ad962c3f1e665d4d2e38a83",
-    "https://lucasluizss.github.io/next-date/index.html": "46d87176ed9d74781ee23e6c83d62b74beab2b7b",
-    "https://lucasluizss.github.io/next-date/main.959820023cc66e68.js": "b29b63990770b771bf4e2691c2380311958d5653",
+    "https://lucasluizss.github.io/next-date/index.html": "6b27124833921688e31a10c2c4062a792bb2736a",
+    "https://lucasluizss.github.io/next-date/main.b78f1b41dba77e62.js": "2c701aaba3a4ef678d46c8854094ed37007d5d91",
     "https://lucasluizss.github.io/next-date/manifest.webmanifest": "f04a74656e0023da6cbede03c8e07b9080412601",
     "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js": "4feaaac37e7154b6a064d656a44c0067bd91d046",
-    "https://lucasluizss.github.io/next-date/runtime.a13fa87ca7f947f9.js": "51465b49006d51d4d9e5f30e3c46aa9c497916b2",
-    "https://lucasluizss.github.io/next-date/styles.4457643d4fa181a2.css": "5491b2549dbaa92c8e135010f14a90c14c9c1333"
+    "https://lucasluizss.github.io/next-date/runtime.0ea68285c4ebea7c.js": "c28f93f904aeb1889340afeac542153e11de0a7d",
+    "https://lucasluizss.github.io/next-date/styles.0c648831d9142150.css": "5f3a47adfbf0daf76f6c9386dfc30befb6cdae2e"
   },
   "navigationUrls": [
     {
