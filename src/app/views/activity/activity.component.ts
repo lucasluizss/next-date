@@ -1,15 +1,15 @@
-import { ActivatedRoute } from '@angular/router';
 import {
+	OnInit,
+	OnDestroy,
+	Component,
 	AfterViewInit,
 	ChangeDetectorRef,
-	Component,
-	OnDestroy,
-	OnInit,
 } from '@angular/core';
+import 'add-to-calendar-button';
+import { ActivatedRoute } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 import database from '@data/database.json';
-
-const SATURDAY = 6;
 
 type CalendarEvent = {
 	summary: string;
@@ -18,13 +18,16 @@ type CalendarEvent = {
 	startDate: string;
 	endDate: string;
 };
+
+const SATURDAY = 6;
+
 @Component({
 	selector: 'app-activity',
 	templateUrl: './activity.component.html',
 	styleUrls: ['./activity.component.css'],
 })
 export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
-	public calendarEvent?: CalendarEvent;
+	public eventButton?: SafeHtml;
 	public timer: string = '';
 	public activity: string = 'Choose Next Activity';
 	public activities: string[] = database.activities;
@@ -37,6 +40,7 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 	);
 
 	constructor(
+		private readonly sanitizer: DomSanitizer,
 		private readonly cdr: ChangeDetectorRef,
 		private readonly activatedRoute: ActivatedRoute
 	) {}
@@ -78,7 +82,7 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		this.setCalendarEvent({
 			summary: this.activity,
 			description: 'Planned date',
-			location: 'To be defined',
+			location: 'Unknown Location',
 			startDate: this.selectedDate.toISOString(),
 			endDate: this.selectedDate.toISOString(),
 		});
@@ -91,13 +95,21 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		startDate,
 		endDate,
 	}: CalendarEvent) {
-		this.calendarEvent = {
-			summary,
-			description,
-			location,
-			startDate,
-			endDate,
-		};
+		this.eventButton = this.sanitizer.bypassSecurityTrustHtml(`
+			<add-to-calendar-button
+				name="${summary}"
+				description="${description}"
+				startDate="${startDate}"
+				endDate="${endDate}"
+				options="'Apple','Google','iCal'"
+				startTime="19:00"
+				endTime="23:30"
+				location="${location}"
+				buttonStyle="date"
+				size="4"
+				lightMode="bodyScheme"
+			></add-to-calendar-button>
+		`);
 		this.cdr.detectChanges();
 	}
 }
