@@ -61,6 +61,8 @@ export class ActivitySelectorComponent {
 	}
 
 	onSubmit() {
-		this.router.navigate(['activity'], { queryParams: { date: this.date } });
+		if (this.date) {
+			this.router.navigate(['activity'], { queryParams: { date: this.date } });
+		}
 	}
 }
