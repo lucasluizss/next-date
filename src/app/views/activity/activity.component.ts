@@ -26,7 +26,7 @@ const SATURDAY = 6;
 })
 export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 	public calendarEvent?: CalendarEvent;
-	public title: string = 'Next activity in';
+	public title: string = 'Suggested start in';
 	public timer: string = '';
 	public activity: string = 'Loading...';
 	public activities: string[] = database.activities;
