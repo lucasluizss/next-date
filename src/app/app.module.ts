@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule, isDevMode } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
@@ -5,11 +6,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, FooterComponent],
 	imports: [
 		BrowserModule,
+		CommonModule,
 		AppRoutingModule,
 		HttpClientModule,
 		ServiceWorkerModule.register('ngsw-worker.js', {

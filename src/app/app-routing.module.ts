@@ -18,6 +18,20 @@ const routes: Routes = [
 				loadChildren: () =>
 					import('./views/activity/activity.module').then(x => x.AppActivityModule),
 			},
+			{
+				path: 'shared-experiences',
+				loadChildren: () =>
+					import('./views/shared-experiences/shared-experiences.module').then(
+						x => x.SharedExperiencesModule
+					),
+			},
+			{
+				path: 'terms-of-use',
+				loadChildren: () =>
+					import('./views/terms-of-use/terms-of-use.module').then(
+						x => x.TermsOfUseModule
+					),
+			},
 		],
 	},
 ];

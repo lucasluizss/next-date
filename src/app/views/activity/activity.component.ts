@@ -15,6 +15,9 @@ type CalendarEvent = {
 	location: string;
 	startDate: string;
 	endDate: string;
+	startTime: string;
+	endTime: string;
+	timeZone: string;
 };
 
 const SATURDAY = 6;
@@ -29,9 +32,10 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 	public title: string = 'Suggested start in';
 	public timer: string = '';
 	public activity: string = 'Loading...';
+
 	public activities: string[] = database.activities;
 	private intervalId: any;
-	private selectedDate = new Date(
+	private nextSaturday = new Date(
 		new Date().getFullYear(),
 		new Date().getMonth(),
 		new Date().getDate() + (SATURDAY - new Date().getDay())
@@ -55,14 +59,18 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		clearInterval(this.intervalId);
 	}
 
-	setTimer(): void {
+	private setTimer(): void {
 		const today = new Date();
-		const diff = this.selectedDate.getTime() - today.getTime();
+		const diff = this.nextSaturday.getTime() - today.getTime();
 		const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 		const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 		const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 		this.timer = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+	}
+
+	private getFormatedDate(date: Date) {
+		return date.toISOString().substring(0, 10);
 	}
 
 	sortActivity(): void {
@@ -71,10 +79,13 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 
 		this.calendarEvent = {
 			summary: this.activity,
-			description: 'Planned date',
+			description: `Planned date: ${this.activity}`,
 			location: 'Unknown Location',
-			startDate: this.selectedDate.toISOString(),
-			endDate: this.selectedDate.toISOString(),
+			startDate: this.getFormatedDate(this.nextSaturday),
+			endDate: this.getFormatedDate(this.nextSaturday),
+			startTime: '19:00',
+			endTime: '23:59',
+			timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 		};
 		this.cdr.detectChanges();
 	}

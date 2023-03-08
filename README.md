@@ -1,27 +1,52 @@
-# NextDate
+<div align="center" id="top">
+  <img src="./.github/assets/next-date.icon.png" width="300" alt=`Next Date` />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+&#xa0;
 
-## Development server
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h1 align="center">Next Date</h1>
 
-## Code scaffolding
+<div align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/lucasluizss/next-date?color=F50057" />
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/lucasluizss/next-date?color=F50057" />
 
-## Build
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/lucasluizss/next-date?color=F50057" />
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  <img alt="Github stars" src="https://img.shields.io/github/stars/lucasluizss/next-date?color=F50057" />
+</div>
 
-## Running unit tests
+<!-- Status -->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<!-- <h4 align="center">
+	🚧  Next Date 🚀 Under construction...  🚧
+</h4>
 
-## Running end-to-end tests
+<hr> -->
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <a href="https://github.com/lucasluizss" target="_blank">Author</a>  &#xa0; | &#xa0;
+  <a href="https://lucasluizss.github.io/next-date">Demo</a>
+</p>
 
-## Further help
+<br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## :dart: About
+
+Welcome to our `Next Date` app, where you will find a myriad of incredible ideas to spice up your relationship and strengthen the connection between you and your loved one.
+
+We offer a wide range of activities, from romantic candlelit dinners to adrenaline-fueled adventures for the more daring couples. Our goal is to provide unforgettable and surprising moments for you and your partner, making every moment spent together even more special.
+
+Whether you've been together for a short time or many years, our app has options for every taste and style. You can choose from outdoor activities, cultural outings, gastronomic experiences, and more. All designed to make your relationship even more solid and full of love.
+
+So, download our `Next Date` app now and start exploring all the possibilities we have for you. Surprise your partner with unique and unforgettable moments and turn your relationship into a true love story!
+
+## Author
+
+Made with :heart: by <a href="https://github.com/lucasluizss" target="_blank">Lucas Silva</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>

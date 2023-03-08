@@ -11,12 +11,12 @@
 			[attr.startDate]="calendarEvent.startDate"
 			[attr.endDate]="calendarEvent.endDate"
 			options="'Apple','Google','iCal'"
-			startTime="19:00"
-			endTime="23:30"
+			[attr.startTime]="calendarEvent.startTime"
+			[attr.endTime]="calendarEvent.endTime"
 			[attr.location]="calendarEvent.location"
-			timeZone="GMT"
+			[attr.timeZone]="calendarEvent.timeZone"
 			buttonStyle="date"
-			size="4"
+			size="5"
 			lightMode="bodyScheme"
 		></add-to-calendar-button>
 		<button class="button" (click)="sortActivity()">Alternative</button>

@@ -8,11 +8,7 @@
 }
 
 .container {
-	margin-top: 15%;
-}
-
-.button {
-	margin-bottom: 15%;
+	padding-top: 60px;
 }
 
 .actions {
@@ -24,4 +20,88 @@
 
 .event-description {
 	margin-bottom: 50px;
+}
+
+h1 {
+	font-size: 80px;
+	margin-bottom: 0;
+	text-align: center;
+	animation: colorAnimation 5s infinite;
+}
+
+.timer {
+	font-size: 48px;
+	margin-top: 20px;
+	text-align: center;
+	animation: colorAnimation 5s infinite;
+}
+
+.activity {
+	margin-top: 70px;
+	text-align: center;
+	font-size: 64px;
+	margin-bottom: 70px;
+	color: #fff;
+}
+
+button {
+	background: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	animation: colorAnimation 5s infinite;
+	font-size: 20px;
+	font-weight: 600;
+	height: 42px;
+}
+
+.add-calendar-btn {
+	margin-left: 10px;
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 40px;
+		margin-top: 20px;
+		animation: colorAnimation 5s infinite;
+	}
+
+	.timer {
+		font-size: 36px;
+		margin-top: 10px;
+		animation: colorAnimation 5s infinite;
+	}
+
+	.activity {
+		margin-top: 30px;
+		font-size: 46px;
+		color: #fff;
+	}
+
+	button {
+		font-size: 16px;
+		padding: 8px 16px;
+	}
+}
+
+@keyframes colorAnimation {
+	0% {
+		color: #b949b6;
+	}
+	25% {
+		color: #ab37a8;
+	}
+	50% {
+		color: #9c259b;
+	}
+	75% {
+		color: #8e138d;
+	}
+	100% {
+		color: #800180;
+	}
 }
