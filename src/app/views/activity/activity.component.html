@@ -1,10 +1,24 @@
 <div class="container">
-	<h1>Next activity in</h1>
+	<h1>{{ title }}</h1>
 	<div class="timer">{{ timer }}</div>
 	<div class="activity">{{ activity }}</div>
 
-	<div class="actions">
-		<div [innerHTML]="eventButton" class="event-description"></div>
-		<button class="button" onclick="window.history.back()">Next Activity</button>
+	<div class="actions" *ngIf="calendarEvent">
+		<add-to-calendar-button
+			class="event-description"
+			[attr.name]="calendarEvent.summary"
+			[attr.description]="calendarEvent.description"
+			[attr.startDate]="calendarEvent.startDate"
+			[attr.endDate]="calendarEvent.endDate"
+			options="'Apple','Google','iCal'"
+			startTime="19:00"
+			endTime="23:30"
+			[attr.location]="calendarEvent.location"
+			timeZone="GMT"
+			buttonStyle="date"
+			size="4"
+			lightMode="bodyScheme"
+		></add-to-calendar-button>
+		<button class="button" (click)="sortActivity()">Alternative</button>
 	</div>
 </div>

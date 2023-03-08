@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
 	{
 		path: '',
-		redirectTo: '/new',
+		redirectTo: '/activity',
 		pathMatch: 'full',
 	},
 	{
@@ -17,13 +17,6 @@ const routes: Routes = [
 				path: 'activity',
 				loadChildren: () =>
 					import('./views/activity/activity.module').then(x => x.AppActivityModule),
-			},
-			{
-				path: 'new',
-				loadChildren: () =>
-					import('./views/activity-selector/activity-selector.module').then(
-						x => x.AppActivitySelectorModule
-					),
 			},
 		],
 	},

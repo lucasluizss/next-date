@@ -6,8 +6,6 @@ import {
 	ChangeDetectorRef,
 } from '@angular/core';
 import 'add-to-calendar-button';
-import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 import database from '@data/database.json';
 
@@ -27,11 +25,11 @@ const SATURDAY = 6;
 	styleUrls: ['./activity.component.css'],
 })
 export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
-	public eventButton?: SafeHtml;
+	public calendarEvent?: CalendarEvent;
+	public title: string = 'Next activity in';
 	public timer: string = '';
-	public activity: string = 'Choose Next Activity';
+	public activity: string = 'Loading...';
 	public activities: string[] = database.activities;
-	public activityIndex: number = 0;
 	private intervalId: any;
 	private selectedDate = new Date(
 		new Date().getFullYear(),
@@ -39,17 +37,9 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		new Date().getDate() + (SATURDAY - new Date().getDay())
 	);
 
-	constructor(
-		private readonly sanitizer: DomSanitizer,
-		private readonly cdr: ChangeDetectorRef,
-		private readonly activatedRoute: ActivatedRoute
-	) {}
+	constructor(private readonly cdr: ChangeDetectorRef) {}
 
 	ngOnInit(): void {
-		this.activatedRoute.queryParams.subscribe(params => {
-			this.selectedDate = new Date(params['date']);
-		});
-
 		this.setTimer();
 		this.intervalId = setInterval(() => {
 			this.setTimer();
@@ -79,37 +69,13 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		const index = Math.floor(Math.random() * this.activities.length);
 		this.activity = this.activities[index];
 
-		this.setCalendarEvent({
+		this.calendarEvent = {
 			summary: this.activity,
 			description: 'Planned date',
 			location: 'Unknown Location',
 			startDate: this.selectedDate.toISOString(),
 			endDate: this.selectedDate.toISOString(),
-		});
-	}
-
-	setCalendarEvent({
-		summary,
-		description,
-		location,
-		startDate,
-		endDate,
-	}: CalendarEvent) {
-		this.eventButton = this.sanitizer.bypassSecurityTrustHtml(`
-			<add-to-calendar-button
-				name="${summary}"
-				description="${description}"
-				startDate="${startDate}"
-				endDate="${endDate}"
-				options="'Apple','Google','iCal'"
-				startTime="19:00"
-				endTime="23:30"
-				location="${location}"
-				buttonStyle="date"
-				size="4"
-				lightMode="bodyScheme"
-			></add-to-calendar-button>
-		`);
+		};
 		this.cdr.detectChanges();
 	}
 }
