@@ -6,3 +6,13 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+header {
+	position: fixed;
+}
+
+@media only screen and (max-width: 720px) {
+	header {
+		position: absolute;
+	}
+}
