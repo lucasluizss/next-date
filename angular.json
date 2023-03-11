@@ -53,6 +53,7 @@
 					},
 					"configurations": {
 						"production": {
+							"baseHref": "/next-date",
 							"budgets": [
 								{
 									"type": "initial",
