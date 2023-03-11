@@ -1,107 +1,28 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'app-shared-experiences',
 	templateUrl: './shared-experiences.component.html',
 	styleUrls: ['./shared-experiences.component.css'],
 })
-export class SharedExperiencesComponent {
-	public images = [
-		{ title: 'Kara Rowland' },
-		{ title: 'Eliezer Owens' },
-		{ title: 'Amaya Maxwell' },
-		{ title: 'Eden Prince' },
-		{ title: 'Greta Archer' },
-		{ title: 'Ephraim McCormick' },
-		{ title: 'Macie Cervantes' },
-		{ title: 'Kamari Simpson' },
-		{ title: 'Anastasia Chambers' },
-		{ title: 'Orion Horne' },
-		{ title: 'Marlowe Norton' },
-		{ title: 'Callen Ingram' },
-		{ title: 'Katie Carlson' },
-		{ title: 'Paul Johnson' },
-		{ title: 'Emma Barr' },
-		{ title: 'Harley Mendez' },
-		{ title: 'Londyn Butler' },
-		{ title: 'Ryder Conway' },
-		{ title: 'Ryann Rosas' },
-		{ title: 'Remi Mora' },
-		{ title: 'Jemma Rivers' },
-		{ title: 'Bear Diaz' },
-		{ title: 'Elena Rosales' },
-		{ title: 'Wilder Moss' },
-		{ title: 'Bianca Baker' },
-		{ title: 'Ezra Love' },
-		{ title: 'Avianna Zhang' },
-		{ title: 'Isaias Peralta' },
-		{ title: 'Malayah Le' },
-		{ title: 'Damien Preston' },
-		{ title: 'Indie Andersen' },
-		{ title: 'Alistair Ibarra' },
-		{ title: 'Madilynn Blake' },
-		{ title: 'Zyaire Gonzales' },
-		{ title: 'Hadley Landry' },
-		{ title: 'Jaxx Brandt' },
-		{ title: 'Loretta Kerr' },
-		{ title: 'Louie Haynes' },
-		{ title: 'Lexi Evans' },
-		{ title: 'Elias Barron' },
-		{ title: 'Anya Ayala' },
-		{ title: 'Tanner Walter' },
-		{ title: 'Penny Drake' },
-		{ title: 'Jalen Fields' },
-		{ title: 'Annie Robbins' },
-		{ title: 'Finnegan Sutton' },
-		{ title: 'Izabella Graves' },
-		{ title: 'Cesar Spencer' },
-		{ title: 'Alyssa Larsen' },
-		{ title: 'Brycen Olsen' },
-		{ title: 'Oaklyn Smith' },
-		{ title: 'Liam Reed' },
-		{ title: 'Valentina Bowen' },
-		{ title: 'Trevor Donovan' },
-		{ title: 'Azariah Wall' },
-		{ title: 'Issac Henderson' },
-		{ title: 'Maria Gray' },
-		{ title: 'Nicholas Bowers' },
-		{ title: 'Elisa Hartman' },
-		{ title: 'Baker Rios' },
-		{ title: 'Brooke Williams' },
-		{ title: 'Oliver Sexton' },
-		{ title: 'Ellen Archer' },
-		{ title: 'Ephraim Walsh' },
-		{ title: 'Leia French' },
-		{ title: 'Corey Gilbert' },
-		{ title: 'Jocelyn Page' },
-		{ title: 'Pablo McBride' },
-		{ title: 'Kelsey Park' },
-		{ title: 'Daxton McConnell' },
-		{ title: 'Denise McGuire' },
-		{ title: 'Casey Richardson' },
-		{ title: 'Allison Burgess' },
-		{ title: 'Kolton Osborne' },
-		{ title: 'Shelby Dickerson' },
-		{ title: 'Flynn Wolf' },
-		{ title: 'Jolene Logan' },
-		{ title: 'Rocco Randall' },
-		{ title: 'Christina Meyers' },
-		{ title: 'Julien Moody' },
-		{ title: 'Elaine Richardson' },
-		{ title: 'Robert Rich' },
-		{ title: 'Sunny Schroeder' },
-		{ title: 'Izaiah Sanford' },
-		{ title: 'Emerald Reeves' },
-		{ title: 'Clark Reynolds' },
-		{ title: 'Isabelle Richmond' },
-		{ title: 'Mordechai Rowe' },
-		{ title: 'Matilda Blankenship' },
-		{ title: 'Ernesto Farrell' },
-		{ title: 'Kassidy Beard' },
-		{ title: 'Nathanael Madden' },
-		{ title: 'Violette Lu' },
-		{ title: 'Duncan Mitchell' },
-		{ title: 'Willow Best' },
-		{ title: 'Harlem Hayden' },
-	];
+export class SharedExperiencesComponent implements OnInit {
+	public images: Array<any> = [];
+	private readonly ACCESS_TOKEN = localStorage.getItem('auth_token');
+	private readonly API_URL =
+		'https://api.instagram.com/v1/tags/{TAG_NAME}/media/recent?access_token=' +
+		this.ACCESS_TOKEN;
+
+	constructor(private http: HttpClient) {}
+
+	ngOnInit() {
+		this.getInstagramImagesByTag('cb500f');
+	}
+
+	getInstagramImagesByTag(tag: string) {
+		const apiUrl = this.API_URL.replace('{TAG_NAME}', tag);
+		this.http.get(apiUrl).subscribe((data: any) => {
+			this.images = data.data;
+		});
+	}
 }
