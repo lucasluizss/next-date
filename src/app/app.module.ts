@@ -11,6 +11,7 @@ import { InstallComponent } from './components/install/install.component';
 
 @NgModule({
 	declarations: [AppComponent, FooterComponent, InstallComponent],
+	exports: [InstallComponent],
 	imports: [
 		BrowserModule,
 		CommonModule,
