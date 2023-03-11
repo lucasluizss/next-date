@@ -43,6 +43,12 @@ import { Component } from '@angular/core';
 			.footer a:hover {
 				text-decoration: underline;
 			}
+
+			@media screen and (max-width: 480px) {
+				.footer {
+					max-width: 360px;
+				}
+			}
 		`,
 	],
 })

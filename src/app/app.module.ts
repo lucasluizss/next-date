@@ -7,9 +7,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { InstallComponent } from './components/install/install.component';
 
 @NgModule({
-	declarations: [AppComponent, FooterComponent],
+	declarations: [AppComponent, FooterComponent, InstallComponent],
 	imports: [
 		BrowserModule,
 		CommonModule,
