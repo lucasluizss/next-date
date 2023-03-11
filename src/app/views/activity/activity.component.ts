@@ -66,7 +66,7 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		const isToday = diff < 0;
 
 		if (isToday) {
-			this.timer = 'now';
+			this.timer = 'NOW';
 		} else {
 			const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 			const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
