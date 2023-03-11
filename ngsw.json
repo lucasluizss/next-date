@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1678543798047,
+  "timestamp": 1678544598221,
   "index": "https://lucasluizss.github.io/next-date/index.html",
   "assetGroups": [
     {
@@ -21,7 +21,7 @@
         "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js",
         "https://lucasluizss.github.io/next-date/runtime.8f24debf7677ba5f.js",
         "https://lucasluizss.github.io/next-date/scripts.5b2b07e8d125eae3.js",
-        "https://lucasluizss.github.io/next-date/styles.f3c1b82e13e96ce8.css"
+        "https://lucasluizss.github.io/next-date/styles.b4c4c75624e82786.css"
       ],
       "patterns": []
     },
@@ -61,13 +61,13 @@
     "https://lucasluizss.github.io/next-date/assets/icons/icon-72x72.png": "632191d802194a33dbb508bbe71c95b451c5b0c5",
     "https://lucasluizss.github.io/next-date/assets/icons/icon-96x96.png": "7eabe15447e1dccd2c1e731e4e97dc13179e98f3",
     "https://lucasluizss.github.io/next-date/favicon.ico": "8430bed26a25e8e76ad962c3f1e665d4d2e38a83",
-    "https://lucasluizss.github.io/next-date/index.html": "1284ab5b273e218889d029c21752a5a88a33eec3",
+    "https://lucasluizss.github.io/next-date/index.html": "053f81683c8de3b1421fa56e976b82b1246c1d47",
     "https://lucasluizss.github.io/next-date/main.691498a3a865d4ba.js": "ea4a8d91fbb160e18f12a6a6fa46e00f5ecc9d27",
     "https://lucasluizss.github.io/next-date/manifest.webmanifest": "9f8a1eee82f976312b38d49a4e2a54edb0c4c542",
     "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js": "4feaaac37e7154b6a064d656a44c0067bd91d046",
     "https://lucasluizss.github.io/next-date/runtime.8f24debf7677ba5f.js": "c300552d36febf40f8fb69fbe7f4287034d98400",
     "https://lucasluizss.github.io/next-date/scripts.5b2b07e8d125eae3.js": "a61276ec000823e36d74e4591649abb75b9886f1",
-    "https://lucasluizss.github.io/next-date/styles.f3c1b82e13e96ce8.css": "70c6a47c39a91b30f7d305e3a3d6423afc224580"
+    "https://lucasluizss.github.io/next-date/styles.b4c4c75624e82786.css": "90d36fafbca0fe207aabce113adc50e10bf66927"
   },
   "navigationUrls": [
     {
