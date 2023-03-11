@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1678538488775,
+  "timestamp": 1678539077995,
   "index": "https://lucasluizss.github.io/next-date/index.html",
   "assetGroups": [
     {
@@ -63,7 +63,7 @@
     "https://lucasluizss.github.io/next-date/assets/icons/icon-96x96.png": "7eabe15447e1dccd2c1e731e4e97dc13179e98f3",
     "https://lucasluizss.github.io/next-date/assets/scripts/pwacompat.min.js": "9d56fb2ff4fa6f2073bb2404c0a5e566beaf9a3d",
     "https://lucasluizss.github.io/next-date/favicon.ico": "8430bed26a25e8e76ad962c3f1e665d4d2e38a83",
-    "https://lucasluizss.github.io/next-date/index.html": "66997bc7694003b395af2f3dea65c82be21b396e",
+    "https://lucasluizss.github.io/next-date/index.html": "de5bce63adf14a0b81630d3fdcb4f9cf06810a73",
     "https://lucasluizss.github.io/next-date/main.7f89800808c9367a.js": "d57e51ce424ac3c71107620b3e64bbb0d239cd62",
     "https://lucasluizss.github.io/next-date/manifest.webmanifest": "9f8a1eee82f976312b38d49a4e2a54edb0c4c542",
     "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js": "4feaaac37e7154b6a064d656a44c0067bd91d046",
