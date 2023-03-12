@@ -49,7 +49,10 @@
 						"tsConfig": "tsconfig.app.json",
 						"assets": ["src/favicon.ico", "src/assets", "src/manifest.webmanifest"],
 						"styles": ["src/styles.css"],
-						"scripts": ["node_modules/add-to-calendar-button/dist/atcb.js"]
+						"scripts": [
+							"node_modules/add-to-calendar-button/dist/atcb.js",
+							"src/assets/scripts/widget.js"
+						]
 					},
 					"configurations": {
 						"production": {
