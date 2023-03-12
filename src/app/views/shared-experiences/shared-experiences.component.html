@@ -3,4 +3,12 @@
 	<p>#NextDate #NextDateApp</p>
 </div>
 
-<figure data-behold-id="8oifIIULLEuj2quKXAEq"></figure>
+<div class="instagram-feed">
+	<div class="instagram-images" *ngIf="mediaList">
+		<div class="instagram-image" *ngFor="let image of mediaList">
+			<a [href]="image.permalink" [title]="image.caption" target="_blank">
+				<img [src]="image.mediaUrl" width="250" height="250" [alt]="image.caption" />
+			</a>
+		</div>
+	</div>
+</div>
