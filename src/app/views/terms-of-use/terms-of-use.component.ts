@@ -36,6 +36,13 @@ import { Component, OnInit } from '@angular/core';
 				text-align: center;
 				text-transform: uppercase;
 			}
+
+			/* Media queries for mobile screens */
+			@media screen and (max-width: 480px) {
+				.container {
+					margin: 20px 0 60px 0;
+				}
+			}
 		`,
 	],
 })

@@ -61,12 +61,20 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	private setTimer(): void {
 		const today = new Date();
+		this.nextSaturday.setHours(19, 0, 0);
 		const diff = this.nextSaturday.getTime() - today.getTime();
-		const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-		const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-		const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-		this.timer = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+		const isToday = diff < 0;
+
+		if (isToday) {
+			this.timer = 'NOW';
+		} else {
+			const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+			this.timer = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+		}
 	}
 
 	private getFormatedDate(date: Date) {
