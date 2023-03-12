@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
 					<div class="col-md-4">
 						<a routerLink="/activity">Home</a> | &nbsp;
 						<a routerLink="/shared-experiences">Shared Experiences</a> | &nbsp;
-						<a href="https://github.com/lucasluizss/next-date" target="_blank">About</a> |
-						&nbsp;
+						<a routerLink="/about">About</a> | &nbsp;
 						<a routerLink="/terms-of-use">Terms of Use</a>
 					</div>
 				</div>

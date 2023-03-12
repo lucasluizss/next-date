@@ -32,6 +32,10 @@ const routes: Routes = [
 						x => x.TermsOfUseModule
 					),
 			},
+			{
+				path: 'about',
+				loadChildren: () => import('./views/about/about.module').then(x => x.AboutModule),
+			},
 		],
 	},
 ];
