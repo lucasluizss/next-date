@@ -87,3 +87,11 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+	.instagram-feed {
+		display: flex;
+		justify-content: center;
+	}
+}
