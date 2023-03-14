@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1678818813584,
+  "timestamp": 1678819103829,
   "index": "https://lucasluizss.github.io/next-date/index.html",
   "assetGroups": [
     {
@@ -22,7 +22,7 @@
         "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js",
         "https://lucasluizss.github.io/next-date/runtime.c9f21859b5755e2f.js",
         "https://lucasluizss.github.io/next-date/scripts.997aefd68e559d81.js",
-        "https://lucasluizss.github.io/next-date/styles.c8991a484dd4c95c.css"
+        "https://lucasluizss.github.io/next-date/styles.6a9673350b6aa679.css"
       ],
       "patterns": []
     },
@@ -71,13 +71,13 @@
     "https://lucasluizss.github.io/next-date/assets/icons/square-instagram.svg": "e53845fe902c361676067748390343fb30f697d0",
     "https://lucasluizss.github.io/next-date/assets/scripts/widget.js": "f69b6344952333afa30e70653452f08dcb4f5d60",
     "https://lucasluizss.github.io/next-date/favicon.ico": "8430bed26a25e8e76ad962c3f1e665d4d2e38a83",
-    "https://lucasluizss.github.io/next-date/index.html": "29c6b3d840f61f945ae5bafe597f9b8a735bce94",
+    "https://lucasluizss.github.io/next-date/index.html": "9ca925a1b509d76224c51c4bf2f57d1bda6214fa",
     "https://lucasluizss.github.io/next-date/main.6a766d74d977cfde.js": "373ea33ae617b45fa02f8cb7c646e933444677f4",
     "https://lucasluizss.github.io/next-date/manifest.webmanifest": "9f8a1eee82f976312b38d49a4e2a54edb0c4c542",
     "https://lucasluizss.github.io/next-date/polyfills.9a8f427134bc3dcb.js": "4feaaac37e7154b6a064d656a44c0067bd91d046",
     "https://lucasluizss.github.io/next-date/runtime.c9f21859b5755e2f.js": "074d1f4fbebb8be14a7033ca0a9dce2b7be5bd07",
     "https://lucasluizss.github.io/next-date/scripts.997aefd68e559d81.js": "bcf7e06c3189a58f787c26070e1b06f66152643e",
-    "https://lucasluizss.github.io/next-date/styles.c8991a484dd4c95c.css": "d80d67404231f77a1fad17fb8a2ccb81f27e77c9"
+    "https://lucasluizss.github.io/next-date/styles.6a9673350b6aa679.css": "f057e0e47d7913192821ade727b137b170c2c5fb"
   },
   "navigationUrls": [
     {
