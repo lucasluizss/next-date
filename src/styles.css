@@ -30,6 +30,10 @@ h1 {
 	header {
 		position: absolute;
 	}
+
+	button {
+		margin-bottom: 30px;
+	}
 }
 
 @keyframes colorAnimation {
