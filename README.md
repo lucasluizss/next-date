@@ -28,7 +28,7 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <a href="https://github.com/lucasluizss" target="_blank">Author</a>  &#xa0; | &#xa0;
-  <a href="https://lucasluizss.github.io/next-date">Demo</a>
+  <a href="https://nextdateapp.onrender.com" target="_blank">Demo</a>
 </p>
 
 <br>
