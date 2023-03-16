@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<a routerLink="/activity">Home</a> | &nbsp;
+						<a routerLink="/">Home</a> | &nbsp;
 						<a routerLink="/shared-experiences">Shared Experiences</a> | &nbsp;
 						<a routerLink="/about">About</a> | &nbsp;
 						<a routerLink="/terms-of-use">Terms of Use</a>

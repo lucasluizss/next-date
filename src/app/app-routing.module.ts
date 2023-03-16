@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
 	{
 		path: '',
-		redirectTo: '/activity',
+		redirectTo: '/',
 		pathMatch: 'full',
 	},
 	{
@@ -14,7 +14,7 @@ const routes: Routes = [
 		component: AppComponent,
 		children: [
 			{
-				path: 'activity',
+				path: '',
 				loadChildren: () =>
 					import('./views/activity/activity.module').then(x => x.AppActivityModule),
 			},
@@ -41,7 +41,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+	imports: [
+		RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload', useHash: true }),
+	],
 	exports: [RouterModule],
 })
 export class AppRoutingModule {}
