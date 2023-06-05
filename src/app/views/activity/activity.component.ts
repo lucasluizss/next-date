@@ -81,8 +81,20 @@ export class ActivityComponent implements OnInit, AfterViewInit, OnDestroy {
 		return date.toISOString().substring(0, 10);
 	}
 
+	private getRandomInt(max: number) {
+		const randomBuffer = new Uint32Array(1);
+	
+		window.crypto.getRandomValues(randomBuffer);
+	
+		let randomNumber = randomBuffer[0] / (0xffffffff + 1);
+	
+		const min = 0;
+		max = Math.floor(max);
+		return Math.floor(randomNumber * (max - min + 1)) + min;
+	}
+
 	sortActivity(): void {
-		const index = Math.floor(Math.random() * this.activities.length);
+		const index = this.getRandomInt(this.activities.length);
 		this.activity = this.activities[index];
 
 		this.calendarEvent = {
