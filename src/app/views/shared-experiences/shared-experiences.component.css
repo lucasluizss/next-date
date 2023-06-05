@@ -78,7 +78,7 @@
 
 .instagram-image:hover:before {
 	content: '\f16d';
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 5 Free', sans-serif;
 	font-weight: 900;
 	font-size: 24px;
 	color: white;
